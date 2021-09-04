@@ -1,0 +1,7 @@
+simple/blog/dto/BlogDto.class
+simple/blog/entity/Blog.class
+simple/blog/service/BlogService.class
+simple/blog/repository/BlogRepository.class
+simple/blog/SimpleBlogApplication.class
+simple/blog/config/CorsConfiguration.class
+simple/blog/controller/BlogController.class
