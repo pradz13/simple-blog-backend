@@ -6,6 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@ConfigurationPropertiesScan("simple.blog.config")
 @EnableSwagger2
 public class SimpleBlogApplication {
     public static void main(String[] args) {
