@@ -18,6 +18,7 @@ public class Blog {
 
     private String blogHeading;
 
+    @Lob
     private String blogBody;
 
     private String tag;
