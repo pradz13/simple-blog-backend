@@ -22,7 +22,9 @@ public class BlogService {
         log.info("Adding the blog : {}", blogDto.getBlogHeading());
         Blog blog = new Blog();
         blog.setBlogHeading(blogDto.getBlogHeading());
-        blog.setBlogBody(blogDto.getBlogBody());
+        String blogBody = blogDto.getBlogBody();
+        blogBody = blogBody.replaceAll("(\r\n|\n)", "<br />");
+        blog.setBlogBody(blogBody);
         blog.setTag(blogDto.getTag());
         blog.setDate(LocalDateTime.now());
         blogRepository.save(blog);
