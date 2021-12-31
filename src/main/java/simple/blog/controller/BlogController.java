@@ -7,7 +7,6 @@ import simple.blog.dto.BlogDto;
 import simple.blog.entity.Blog;
 import simple.blog.service.BlogService;
 
-import javax.websocket.server.PathParam;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class BlogController {
             blogDto.setTag(blog.getTag());
             blogDtos.add(blogDto);
         }
-        log.info("Found {} blogs in the database", blogDtos.size());
+        log.info("Found {} blogs in the database for display", blogDtos.size());
         return blogDtos;
     }
 
